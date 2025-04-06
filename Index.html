@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos Edith</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Productos Edith</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container text-center py-5">
+            <h1>Bienvenido a Productos de Edith</h1>
+            <p>Productos que buscas al mejor precio.</p>
+        </div>
+    </header>
+
+    <!-- Productos -->
+    <section id="productos" class="container py-5">
+        <h2 class="text-center mb-4">Mis Productos</h2>
+        <div class="row" id="productos-container">
+            <!-- Los productos se cargarán aquí con JavaScript -->
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contacto</h2>
+            <form id="contacto-form">
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Nombre" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" rows="3" placeholder="Mensaje" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Tienda de Edith Lopez. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+
+    <a href="https://wa.me/5574642090?text=Quiero%20comprar%20${producto.nombre}" class="btn btn-success">Comprar por WhatsApp</a>
+    
+</body>
+</html>
